@@ -1,0 +1,55 @@
+app4
+
+no main <ListItens />
+
+> src/components/ListaItens criacao do desse componente
+> dica do debug remote, no navegador
+
+> ciclo de vida - mounting cycle
+* constructor
+* componentWillMount - excuta apenas 1 vez
+* render
+* componentDidMount - tb apenas 1 vez
+
+> Criando o componente 'Itens'
+
+> Dentro do componente ListaItens vai existir o componente Itens
+
+> Cliente HTTP Axios
+> Instação: 
+npm install --save-dev babel-preset-es1015
+
+npm install --save-dev babel-preset-react
+
+npm install --save axios
+
+> Utilizando o axios
+import axios from 'axios';
+
+no componentWillMount
+axios.get('url')
+.then( response => {console.log('')} )
+.catch( () => {console.log('erro ')} )
+
+-------
+
+criacao do this.state = { listaItens : [] }
+no then ( this.setState( { listaItens: response.data })  )
+
+-------
+
+utilizando o map no render
+
+{this.state.listaItens.map(
+	function(item){
+		console.log(item);	
+	}
+)}
+
+{this.state.listaItens.map(
+	function(item){
+		return ( <Text key={item.titulo}> {item.titulo}</text>);	
+	}
+)}
+
+aula - 118
