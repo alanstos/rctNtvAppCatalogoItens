@@ -17,7 +17,7 @@ no main <ListItens />
 
 > Cliente HTTP Axios
 > Instação: 
-npm install --save-dev babel-preset-es1015
+npm install --save-dev babel-preset-es2015
 
 npm install --save-dev babel-preset-react
 
@@ -30,6 +30,8 @@ no componentWillMount
 axios.get('url')
 .then( response => {console.log('')} )
 .catch( () => {console.log('erro ')} )
+
+url de teste = http://faus.com.br/recursos/c/dmairr/api/itens.html
 
 -------
 
@@ -52,4 +54,7 @@ utilizando o map no render
 	}
 )}
 
-aula - 118
+-- 
+Utilizando 
+
+ScrollView no lugar de View
