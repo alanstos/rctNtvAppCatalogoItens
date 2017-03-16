@@ -37,13 +37,12 @@ import Item from './Item';
   	console.log('render....')
     return (
         <ScrollView>
-        	
-        	{ 
-        		this.state.listaItens.map( (item) => 
-        			(<Item key={item.titulo} item={item}></Item>) 
-        		) 
-        	}
-        	
+          
+          { 
+            this.state.listaItens.map( (item) => 
+              (<Item key={item.titulo} item={item}></Item>) 
+            ) 
+          }
 
         </ScrollView>
     );
